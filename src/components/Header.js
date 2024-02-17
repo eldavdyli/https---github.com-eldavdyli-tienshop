@@ -8,7 +8,7 @@ function Header() {
   const [genres, setGenres] = useState([]);
   const [loadingGenres, setLoadingGenres] = useState(true);
   const [query, setQuery] = useState ('')
-  const [books, setBooks] = useState([]); // Define books sta
+  const [books, setBooks] = useState([]); 
 
   const genreList = [
     'horror',

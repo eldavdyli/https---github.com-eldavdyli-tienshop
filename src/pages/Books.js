@@ -70,16 +70,16 @@ function Books() {
         if (response.status === 200) {
           if (response.data.items) {
             const sortedBooks = response.data.items.sort((a, b) => {
-              // Get average rating or default to 0
+             
               const ratingA = a.volumeInfo.averageRating || 0;
               const ratingB = b.volumeInfo.averageRating || 0;
-              // Sort books based on their ratings in descending order
+             
               return ratingB - ratingA;
             });
             setBooks(sortedBooks);
             setTotalPages(Math.ceil(response.data.totalItems / 24));
           } else {
-            setBooks([]); // Set books to empty array if no items are found
+            setBooks([]); 
             setTotalPages(1);
           }
         }

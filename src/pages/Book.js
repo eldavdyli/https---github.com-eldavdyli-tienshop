@@ -28,7 +28,7 @@ function BookDetails({ bookId }) {
           <h2>{book.volumeInfo.title}</h2>
           <p>Authors: {book.volumeInfo.authors.join(', ')}</p>
           <p>Description: {book.volumeInfo.description}</p>
-          {/* Add more details as needed */}
+          
         </div>
       ) : (
         <p>Loading...</p>
